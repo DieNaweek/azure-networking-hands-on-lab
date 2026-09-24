@@ -1,0 +1,30 @@
+# Azure Networking Lab Notes 
+
+## Lab Architecture
+Reviewed the provided lab architecture and identified the required Azure networking components.
+
+## Virtual Networks
+Created the required virtual networks for the lab environment.
+
+## Subnets
+Created subnets within the virtual networks and configured their address spaces and subnet ranges.
+
+## Virtual Machines
+Created the Core Service virtual machine and configured its network interface.
+
+## Network Watcher
+Configured Azure Network Watcher and performed an initial connectivity test.
+The first test was unsuccessful because the VMs were located in separate VNets without the required connectivity configuration.
+
+## VNet Peering
+Configured VNet peering between the required virtual networks.
+The peering status was confirmed as Fully Synchronized.
+
+## Connectivity Testing
+Performed a connectivity test to the Manufacturing VM using `Test-NetConnection`.
+
+## Route Table
+Created a route table for the Core Service network and associated it with the appropriate subnet.
+
+## Custom Routing
+Configured a UDR to direct traffic toward a virtual network appliance in the Core Services network.
